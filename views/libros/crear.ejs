@@ -1,0 +1,16 @@
+<%- include ../layouts/cabecera.ejs %> 
+<!-- se envia los datos del formulario a la ruta de libros /libros,con la propiedad enctype se va a cargar lo que es el archivo-->
+<form method="post" action="/libros" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="my-input">Nombre:</label>
+        <input id="my-input" class="form-control" type="text" name="nombre">
+    </div>
+
+    <div class="form-group">
+        <label for="my-input">Imagen</label>
+        <input id="my-input" class="form-control-file" type="file" name="archivo">
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+</form> 
+<%- include ../layouts/pie.ejs %> 
