@@ -22,25 +22,6 @@ con.connect(
 );
 
 module.exports=con;
-/*
-var mysql = require("mysql");
-var con= mysql.createConnection({
-        host:'localhost',
-        user:'root',
-        password:'utn1234',
-        database:'biblioteca'
-});
 
-con.connect((error)=> {
-    if(error){
-        console.error('El error de conexion es:'+error);
-        return
-    }
-    console.log('Conectado a la BD MySQL!');
-});
-
-module.exports=con;
-
-*/
 
 
