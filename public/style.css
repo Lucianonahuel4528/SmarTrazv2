@@ -1,0 +1,85 @@
+:root {
+    --primaryColor: #39A6A3;
+    --backgroundColor: #E3E3E3;
+    --dangerColor: #CC2929; 
+    --warningColor: #ED9F18;
+    --successColor: #36B267;
+  }
+/* RESET */
+* {
+    box-sizing: border-box;
+  }
+  .alert-messages {
+    text-align:center;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--backgroundColor);
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+
+  h1 {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h2,h3,h4,h5,h6,p {
+    font-family: 'Roboto', sans-serif;
+  }
+  .justificar{
+  text-align: justify;
+  }
+
+  .large-sect {
+    min-height: 78.7vh;
+  }
+
+  /*Navbar*/
+
+nav {
+      background-color: var(--primaryColor);
+ }
+
+nav li a:hover {
+    color:rgb(0, 0, 0);
+}
+
+/* Footer*/
+
+.page-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primaryColor);
+}
+
+
+
+.btn-primary {
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: #ffffff;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border: 1px solid var(--primaryColor);
+}
+
+label {
+  color: black;
+}

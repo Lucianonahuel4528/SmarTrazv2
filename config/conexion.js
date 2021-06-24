@@ -1,10 +1,12 @@
 var mysql= require("mysql");
+const dotenv =require("dotenv");
+dotenv.config({path:'./.env'});
 var con= mysql.createConnection(
     {
-        host:'b1skcak7iih8dhzt3uvn-mysql.services.clever-cloud.com',
-        user:'unrfnkqkc7smilbh',
-        password:'L63H61RCgFJ8E4Wgvixy',
-        database:'b1skcak7iih8dhzt3uvn'
+    host:process.env.DATABASE_HOST,
+    user:process.env.DATABASE_USER,
+    password:process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE
     }
 );
 con.connect(
@@ -22,6 +24,3 @@ con.connect(
 );
 
 module.exports=con;
-
-
-
